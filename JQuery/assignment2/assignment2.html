@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+            margin: 2.5%;
+            box-sizing: border-box;
+        }
+        .container1{
+            background-color: rgb(106, 179, 130);
+            border: 2px solid grey;
+            padding: 1% 0;
+            cursor: pointer;
+        }
+        .container2{
+            padding: 10%;
+            background-color: skyblue;
+            display: none;
+            border: 2px solid grey;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".container1").click(function(){
+                $(".container2").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container1">Click me to slide down panel</div>
+    <div class="container2">Hello World!!</div>
+</body>
+</html>
